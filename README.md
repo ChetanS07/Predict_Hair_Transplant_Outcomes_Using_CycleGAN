@@ -15,5 +15,16 @@
     ``pip install -r requirements.txt``
 8. set proper paths in "plasticSurgery/views.py"
 9. finally run the command to start server
-    ``python manage.py runserver``  
+    ``python manage.py runserver``
+
+**Snapshot of website**
+
+image upload:
+
+![Screenshot 2023-08-09 001900](https://github.com/ChetanS07/Predict_Hair_Transplant_Outcomes_Using_CycleGAN/assets/95538723/ba4a2873-dfbf-47a2-9bab-f9256fa1ec3a)
+
+result:
+
+![Screenshot 2023-08-09 001838](https://github.com/ChetanS07/Predict_Hair_Transplant_Outcomes_Using_CycleGAN/assets/95538723/09b4e8f8-e03f-4322-9d06-aa38f9285d68)
+
 
