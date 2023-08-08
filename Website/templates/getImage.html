@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Outcome</title>
+    <style>
+        body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(41, 192, 162);
+    gap: 5rem;
+}
+
+h1{
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.formdiv{
+    border: 2px solid;
+    padding: 5rem;
+    display: flex;
+    background: rgb(196, 205, 212);
+    flex-direction: column;
+    border-radius: 1rem;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 2rem;
+}
+
+.formdiv form label{
+    font-size: 1.6rem;
+    margin-right: 3rem;
+}
+
+.imageinput{
+    border: 1px solid;
+    padding: .3rem 8rem .3rem 1rem;
+    border-radius: .3rem;
+    background: rgb(87, 87, 89) ;
+    color: aliceblue;
+}
+
+.submitbutton{
+    border: 2px solid;
+    padding: .5rem 5rem;
+    display: block;
+    /* width: 10rem; */
+    border-radius: 1rem ;
+    margin-left: 25rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+    </style>
+</head>
+<body>
+
+    <h1>Predicting PostOperative Outcome of Hair Transplant</h1>
+    
+    <div class="formdiv">
+        <form action="result" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="1a">Upload Image : </label>
+            <input id="1a" type="file" name="preopimg" class="imageinput" required>
+            <input type="submit" class="submitbutton" value="Predict">
+        </form>
+    </div>
+
+</body>
+</html>
