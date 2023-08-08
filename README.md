@@ -12,7 +12,7 @@
 2. cd to "Website" folder
 3. create a virtual environment and activate it.
 4. now install all the required libraries by running command
-    ``pip install requirements.txt``
+    ``pip install -r requirements.txt``
 8. set proper paths in "plasticSurgery/views.py"
 9. finally run the command to start server
     ``python manage.py runserver``  
