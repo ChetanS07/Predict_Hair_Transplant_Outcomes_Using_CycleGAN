@@ -13,8 +13,10 @@
 3. create a virtual environment and activate it.
 4. now install all the required libraries by running command
     ``pip install -r requirements.txt``
-8. set proper paths in "plasticSurgery/views.py"
-9. finally run the command to start server
+5. download the pretrained model from https://drive.google.com/file/d/1G8tjn-m6rOSKTFtF5U2YNjL4IHXGCLop/view?usp=drive_link
+6. copy this file and paste into "checkpoints/plasticSurgery/
+7. set proper paths in "plasticSurgery/views.py"
+8. finally run the command to start server
     ``python manage.py runserver``
 
 **Snapshot of website**
